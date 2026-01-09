@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   
+  // --- LOGIKA UNTUK TAHUN DINAMIS ---
+  const yearElement = document.getElementById('year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+  
   // --- LOGIKA UNTUK MENU HAMBURGER ---
   const hamburger = document.getElementById('hamburger-icon');
   const navLinks = document.getElementById('nav-links');
